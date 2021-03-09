@@ -1,0 +1,64 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "cypress:open:tests": "npx cypress open --config-file cypress-qap.json",
+    "lint": "npm run lint:scripts && npm run lint:editor",
+    "lint:scripts": "eslint --fix ./cypress/integration --ext .ts",
+    "lint:editor": "eclint fix",
+    "allure:report": "allure generate allure-results --clean -o allure-report"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^1.8.4",
+    "@types/crypto-js": "^4.0.1",
+    "@types/cucumber": "^6.0.1",
+    "@types/cypress": "^1.1.3",
+    "@types/cypress-cucumber-preprocessor": "^4.0.0",
+    "@types/lodash": "^4.14.165",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^14.14.7",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "crypto-js": "^4.0.0",
+    "cypress": "^5.1.0",
+    "cypress-cucumber-preprocessor": "^4.0.0",
+    "cypress-dark": "^1.7.14",
+    "cypress-file-upload": "^4.1.1",
+    "cypress-sql-server": "1.0.2",
+    "cypress-xpath": "^1.6.2",
+    "deepmerge": "^4.2.2",
+    "eclint": "^2.8.1",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-cypress": "^2.11.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "npm-check-updates": "^10.1.1",
+    "pathmodify": "^0.5.0",
+    "prettier": "^2.1.2",
+    "tsify": "^5.0.2",
+    "typescript": "^4.0.5",
+    "typescript-collections": "^1.3.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./.eslintrc.js"
+    ]
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "author": "Ivan Sánchez",
+  "dependencies": {
+    "@types/browserify": "^12.0.36",
+    "allure-commandline": "^2.13.0",
+    "fs": "0.0.1-security",
+    "tsconfig": "^7.0.0",
+    "tsconfig-paths": "^3.9.0",
+    "tsconfig-paths-webpack-plugin": "^3.3.0",
+    "vsts-npm-auth": "^0.41.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "extends": "./cypress.json",
+  "env": {
+    "api_baseEndpoint": "https://petstore.swagger.io/v2",
+    "web_baseUrl": "https://www.demoblaze.com"
+  }
+}

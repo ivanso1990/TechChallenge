@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "strict": true,
+    "baseUrl": "./",
+    "target": "es5",
+    "lib": [
+      "es5",
+      "dom"
+    ],
+    "strictNullChecks": false,
+    "types": [
+      "cypress",
+      "cypress-xpath",
+      "node"
+    ],
+    "paths": {
+      "~/*": [
+        "./cypress/integration/*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "../node_modules/@shelex/cypress-allure-plugin/reporter",
+    "../node_modules/cypress",
+    "cypress/integration/petStore/platform/frontend/pageEdit/pageEditReferences"
+  ]
+}

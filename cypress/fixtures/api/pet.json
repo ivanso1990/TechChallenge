@@ -1,0 +1,15 @@
+{
+      "category": {
+        "id": 0,
+        "name": "category_test"
+      },
+      "name": "dummyPet",
+      "photoUrls": [],
+      "tags": [
+        {
+          "id": 99999999,
+          "name": "tag_test"
+        }
+      ],
+      "status": "pedning"
+}
